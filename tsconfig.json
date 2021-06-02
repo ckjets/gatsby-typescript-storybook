@@ -1,0 +1,31 @@
+/**
+* Note:
+* This configuration is partially based on the gatsby-starter-typescript-plus starter.
+* https: //github.com/resir014/gatsby-starter-typescript-plus
+*/
+
+{
+  "compilerOptions": {
+    // Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'.　どれがよきなのかわかってないけど、とりあえず
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "es2015",
+      "es2017"
+    ],
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false
+  },
+  /** コンパイル対象のファイル */
+  "include": [
+    "./src/**/*"
+  ]
+}
